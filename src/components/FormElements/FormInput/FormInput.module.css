@@ -1,0 +1,64 @@
+.FormField {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: .5rem;
+    width: 100%;
+}
+
+.Input {
+    width: 70%;
+    padding: .5rem;
+    height: 3rem;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.FormField label {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: large;
+}
+
+.InputWrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    gap: 1rem;
+}
+
+.InputIconWrapper {
+    height: 100%;
+    border: 1px solid rgb(118, 118, 118);
+    padding: .5rem;
+    border-radius: 3px;
+    background-color: rgb(232, 230, 230);
+    display: flex;
+    align-items: center;
+}
+
+.InputIcon {
+    height: 80%;
+}
+
+.CheckBox {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.CheckBox input {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.CheckBox span {
+    font-size: large;
+}
+
+.Error {
+    border: 2px solid red;
+}
+

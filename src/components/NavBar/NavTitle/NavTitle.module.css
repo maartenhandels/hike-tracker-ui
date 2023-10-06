@@ -1,0 +1,10 @@
+.Title {
+    color: darkgreen;              /* text color */
+    font-weight: bold;
+    font-size: xx-large;
+    margin: 0;
+}
+
+.Title:hover {
+    cursor: pointer;  /* slightly darker gray for hover effect */
+}
