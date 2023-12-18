@@ -1,8 +1,8 @@
 .FormField {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    gap: .5rem;
+    gap: 1rem;
     width: 100%;
 }
 
@@ -12,12 +12,14 @@
     height: 3rem;
     border: 2px solid black;
     border-radius: 10px;
+    max-width: 30rem;
 }
 
 .FormField label {
     color: var(--primary-color);
     font-weight: bold;
     font-size: large;
+    width: 30%;
 }
 
 .InputWrapper {

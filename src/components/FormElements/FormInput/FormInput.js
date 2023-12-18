@@ -3,13 +3,12 @@ import React, { useState } from "react";
 import classes from "./FormInput.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { isValidEmail } from "../../../utilities/dateUtilities";
-
 const FormInput = ({
   name,
   type = "text",
   label,
   value,
+  placeholder = "",
   onChangeHandler,
   icon,
   minLength = 1,
@@ -29,6 +28,7 @@ const FormInput = ({
         value={value}
         onChange={(e) => onChangeHandler(e.target.value)}
         className={`${classes.Input} ${isNotValid ? classes.Error : ""}`}
+        placeholder={placeholder}
       />
     </div>
   ) : (
@@ -38,6 +38,7 @@ const FormInput = ({
       value={value}
       onChange={(e) => onChangeHandler(e.target.value)}
       className={`${classes.Input} ${isNotValid ? classes.Error : ""}`}
+      placeholder={placeholder}
     />
   );
 

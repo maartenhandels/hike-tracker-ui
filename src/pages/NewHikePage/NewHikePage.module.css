@@ -1,3 +1,11 @@
+.CardContainer {
+    background-color: beige;
+    width: 100%;
+    max-width: 60rem;
+    margin: 1rem auto;
+
+}
+
 .Content {
     display: flex;
     flex-direction: column;

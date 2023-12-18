@@ -1,10 +1,10 @@
 import React from "react";
 import Page from "../../containers/Page/Page";
 
-const LandingPage = () => (
+const HomePage = () => (
     <Page>
         <h1>Hello World!</h1>
     </Page>
 );
 
-export default LandingPage;
+export default HomePage;

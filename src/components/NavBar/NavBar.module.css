@@ -10,3 +10,8 @@
     display: flex;
     gap: 2rem;
 }
+
+.Link {
+    text-decoration: none;
+    color: inherit; /* or any color you prefer */
+}

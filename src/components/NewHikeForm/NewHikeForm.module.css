@@ -2,13 +2,27 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    background-color: beige;
-    width: 80%;
+    width: 100%;
     padding: 2rem;
-    margin: 2rem 0;
+    margin: 0;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.Monte {
+.Fields {
+    width: 100%;
     display: flex;
+    flex-direction: column;
     gap: 1rem;
 }
+
+.Button {
+    background-color: #eca83c !important;
+    padding: 1rem 2rem !important;
+    font-weight: bold;
+}
+
+.Button:hover {
+    background-color: rgb(171, 106, 3) !important;
+}
+
