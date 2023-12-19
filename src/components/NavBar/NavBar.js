@@ -11,7 +11,7 @@ const NavBar = () => {
 
     const navBarItems = ["Home", "Crear Excursión", "Crear Informe", "Explorar"]
     const icons = [faHome, faPlus, faFile, faMagnifyingGlassLocation];
-    const paths = ["/mis-hikes", "/nuevo", "/informes", "/explorar"]
+    const paths = ["/", "/nuevo", "/informes", "/explorar"]
 
     return (
         <nav className={classes.NavBar}>
