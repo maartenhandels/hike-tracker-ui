@@ -134,3 +134,6 @@ dist
 
 # MAC OS
 .DS_Store
+
+# Ignore environment variables file
+.env

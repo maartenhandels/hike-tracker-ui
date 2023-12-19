@@ -3,8 +3,8 @@ import React, {useState} from "react";
 import classes from "./NewHikeForm.module.css"
 
 import FormInput from "../FormElements/FormInput/FormInput";
-import {faTextHeight} from "@fortawesome/free-solid-svg-icons"
 import Button from "../Button/Button";
+import CoordinateInput from "../FormElements/CoordinateInput/CoordinateInput";
 
 const NewHikeForm = () => {
 
@@ -43,6 +43,7 @@ const NewHikeForm = () => {
                     value={height}
                     onChangeHandler={setHeight}
                 />
+                <CoordinateInput label="Coordenadas"/>
             </div>
             <div>
                 <Button className={classes.Button} onClick={submitForm}>Guardar</Button>
