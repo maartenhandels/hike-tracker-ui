@@ -17,12 +17,6 @@
 }
 
 .Button {
-    background-color: #eca83c !important;
-    padding: 1rem 2rem !important;
-    font-weight: bold;
-}
-
-.Button:hover {
-    background-color: rgb(171, 106, 3) !important;
+    padding: .75rem 1.75rem !important;
 }
 

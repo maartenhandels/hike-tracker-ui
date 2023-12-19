@@ -1,0 +1,14 @@
+.ModalContent {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+}
+
+.Control {
+    text-align: center;
+    z-index: 100;
+}
