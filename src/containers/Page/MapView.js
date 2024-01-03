@@ -2,16 +2,8 @@ import React, {useState} from 'react';
 import {MapContainer, Marker, Popup, TileLayer} from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-
-// Import the Leaflet marker icon images
 import icon from 'leaflet/dist/images/marker-icon.png';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
-
-const placesData = [
-  {id: 1, name: 'Place A', lat: 43.297977, lon: -1.970416},
-  {id: 2, name: 'Place B', lat: 40.7128, lon: -74.0060},
-  // Add more places as needed
-];
 
 // Adjust the default icon with proper image URLs and anchor points
 let DefaultIcon = L.icon({
@@ -24,7 +16,7 @@ let DefaultIcon = L.icon({
 // Set the default icon for all Leaflet markers
 L.Marker.prototype.options.icon = DefaultIcon;
 
-const MapView = () => {
+const MapView = (places) => {
   const [mapCenter, setMapCenter] = useState([37.7749, -122.4194]); // Default center
   const [mapZoom, setMapZoom] = useState(5); // Default zoom level
 
@@ -43,9 +35,12 @@ const MapView = () => {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png?lang=es"
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         />
-        {placesData.map((place) => (
-            <Marker key={place.id} position={[place.lat, place.lon]}>
-              <Popup>{place.name}</Popup>
+        {places.places.map((place, index) => (
+            <Marker key={index}
+                    position={[place.coordinates?.latitude,
+                      place.coordinates?.longitude]}
+            >
+              <Popup>{place.title}</Popup>
             </Marker>
         ))}
       </MapContainer>
