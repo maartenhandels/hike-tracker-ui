@@ -4,7 +4,7 @@ import React, {useEffect, useState,} from 'react';
 import MapView from "../../containers/Page/MapView";
 import NewHikeForm from '../../components/NewHikeForm/NewHikeForm';
 
-const ExplorePage = () => {
+const MyMap = () => {
   const [places, setPlaces] = useState([]);
 
   useEffect(() => {
@@ -43,5 +43,5 @@ const ExplorePage = () => {
   );
 };
 
-export default ExplorePage;
+export default MyMap;
 

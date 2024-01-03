@@ -1,0 +1,19 @@
+.MyHikes {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  width: 80%;
+  margin-top: 1rem;
+}
+
+.Title {
+  text-align: center;
+
+}
+
+.Rows {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: .5rem;
+}

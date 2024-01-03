@@ -1,0 +1,32 @@
+.MyHikeRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  flex: 1;
+}
+
+.CardRow {
+  flex-basis: 100%; /* Adjust the width of each card */
+  padding: 1.5rem;
+}
+
+.CardContent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: large;
+}
+
+.Column {
+  font-weight: bold;
+  height: 100%;
+}
+
+.Icon {
+  height: 2rem;
+  width: 2rem;
+  color: darkgreen;
+}
+
+

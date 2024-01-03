@@ -17,8 +17,8 @@ let DefaultIcon = L.icon({
 L.Marker.prototype.options.icon = DefaultIcon;
 
 const MapView = (places) => {
-  const [mapCenter, setMapCenter] = useState([37.7749, -122.4194]); // Default center
-  const [mapZoom, setMapZoom] = useState(5); // Default zoom level
+  const [mapCenter, setMapCenter] = useState([16, -38]); // Default center
+  const [mapZoom, setMapZoom] = useState(3); // Default zoom level
 
   return (
       <MapContainer

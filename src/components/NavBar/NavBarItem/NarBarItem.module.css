@@ -1,16 +1,26 @@
 .Link {
-    text-decoration: none;
-    color: inherit; /* or any color you prefer */
+  text-decoration: none;
+  color: inherit; /* or any color you prefer */
+}
+
+.ActiveLink {
+  text-decoration: none;
+  color: green;
+}
+
+.active {
+  color: green;
 }
 
 .Content {
-    display: flex;
-    align-items: center;
-    gap: .3rem;
-    font-size: x-large;
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+  font-size: x-large;
+  color: inherit;
 }
 
-.Content:hover{
-    cursor: pointer;
-    color: darkgreen;
+.Content:hover {
+  cursor: pointer;
+  color: darkgreen;
 }

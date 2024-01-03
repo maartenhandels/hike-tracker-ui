@@ -5,19 +5,19 @@ import classes from "./NavBar.module.css";
 import NavBarItem from "./NavBarItem/NavBarItem";
 import NavTitle from "./NavTitle/NavTitle";
 import {
-  faFile,
   faHome,
   faMagnifyingGlassLocation,
+  faPhotoFilm,
   faPlus
 } from '@fortawesome/free-solid-svg-icons';
 import {Link} from "react-router-dom";
 
 const NavBar = () => {
 
-  const navBarItems = ["Home", "Crear Excursión", "Crear Informe",
-    "Mis Excursiones"]
-  const icons = [faHome, faPlus, faFile, faMagnifyingGlassLocation];
-  const paths = ["/", "/nuevo", "/informes", "/mis-excursiones"]
+  const navBarItems = ["Home", "Crear Excursión", "Mis excursiones",
+    "Mi Mapa"]
+  const icons = [faHome, faPlus, faPhotoFilm, faMagnifyingGlassLocation];
+  const paths = ["/", "/nuevo", "/mis-excursiones", "/mis-mapa"]
 
   return (
       <nav className={classes.NavBar}>
